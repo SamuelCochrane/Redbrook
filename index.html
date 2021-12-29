@@ -18,7 +18,12 @@ featured_image: /images/sidebar/1.jpg
 <section class="blog single">
 
 	<div class="wrap">
+		{% assign min = 1 %}
+		{% assign max = 3 %}
+		{% assign diff = max | minus: min %}
+		{% assign randomNumber = site.time | date: "%s" | modulo: diff | plus: min %}
 
+		<div class="image-wrap"><img id="splash-image" src="{{'images/splash/' | append: randomNumber | append: '.jpg'}}" alt="Me"></div>
 		{% for post in paginator.posts %}
 
 		<article class="blog-post">
