@@ -1,7 +1,7 @@
 ---
 title: About Me
 subtitle: hello
-description: Mo Alawi - about me
+description: Redbrook - about me
 featured_image: /images/sidebar/3.jpg
 ---
 
